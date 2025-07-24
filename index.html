@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkillConnect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-dark" href="#">SkillConnect</a>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-dark active-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark active-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link text-dark active-link" href="#">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-5 hero-section">
+    <div class="container">
+      <h1 class="fw-bold">Match Your Skills<br> to Income</h1>
+      <p class="text-secondary">Discover jobs, freelance gigs, courses and other <br class="d-none d-md-block"> ways to earn money with your skills.</p>
+
+      <div class="input-group mt-4 mx-auto search-bar">
+        <input type="text" class="form-control" placeholder="Enter a skill">
+        <button class="btn btn-primary">FIND OPPORTUNITIES</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <div class="card feature-card h-100">
+            <div class="card-body d-flex align-items-start">
+              <img src="https://img.icons8.com/color/48/monitor--v1.png" alt="Remote Jobs" class="me-3">
+              <div>
+                <h6 class="fw-bold">Remote Jobs</h6>
+                <p class="mb-0 text-secondary">Find full-time or part-time work-from-home jobs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card feature-card h-100">
+            <div class="card-body d-flex align-items-start">
+              <img src="https://img.icons8.com/color/48/pencil.png" alt="Freelance Gigs" class="me-3">
+              <div>
+                <h6 class="fw-bold">Freelance Gigs</h6>
+                <p class="mb-0 text-secondary">Browse projects and tasks for independent work</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card feature-card h-100">
+            <div class="card-body d-flex align-items-start">
+              <img src="https://img.icons8.com/color/48/graduation-cap.png" alt="Online Courses" class="me-3">
+              <div>
+                <h6 class="fw-bold">Online Courses</h6>
+                <p class="mb-0 text-secondary">Learn new skills or improve existing ones</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card feature-card h-100">
+            <div class="card-body d-flex align-items-start">
+              <img src="https://img.icons8.com/color/48/money.png" alt="Income Ideas" class="me-3">
+              <div>
+                <h6 class="fw-bold">Income Ideas</h6>
+                <p class="mb-0 text-secondary">Explore side hustles and passive income options</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<script>
+  // Highlight active nav link
+  const navLinks = document.querySelectorAll('.active-link');
+  const currentURL = window.location.href;
+
+  navLinks.forEach(link => {
+    if (currentURL.includes(link.href)) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+</html>
