@@ -14,9 +14,9 @@
     <div class="container">
       <a class="navbar-brand fw-bold text-dark" href="#">SkillConnect</a>
       <ul class="nav">
-        <li class="nav-item"><a class="nav-link text-dark active-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-dark active-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link text-dark active-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-dark active-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark active-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-dark active-link" href="Contact.html">Contact</a></li>
       </ul>
 
     </div>
@@ -91,17 +91,6 @@
   </section>
 
 </body>
-
-<script>
-  // Highlight active nav link
-  const navLinks = document.querySelectorAll('.active-link');
-  const currentURL = window.location.href;
-
-  navLinks.forEach(link => {
-    if (currentURL.includes(link.href)) {
-      link.classList.add('active');
-    }
-  });
-</script>
+<script src="link-header.js"></script>
 
 </html>
